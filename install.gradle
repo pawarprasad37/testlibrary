@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.terafinlabs.mylibrary'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.terafinlabs.mylibrary'
+                artifactId 'mylibrary'
+                name 'mylibrary'
+                description 'An android library.'
+                url 'https://github.com/pawarprasad37/jcenterpoc'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'terafinlabs'
+                        name 'Prasad Pawar'
+                        email 'pawarprasad37@gmail.com'
+                    }
+                }
+
+                scm {
+                    connection 'https://github.com/pawarprasad37/jcenterpoc.git'
+                    developerConnection 'https://github.com/pawarprasad37/jcenterpoc.git'
+                    url 'https://github.com/pawarprasad37/jcenterpoc'
+                }
+            }
+        }
+    }
+}
